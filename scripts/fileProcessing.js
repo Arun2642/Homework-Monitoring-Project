@@ -98,7 +98,7 @@ function printCSV(){
 }
 
 //old math functions, shouldn't need these
-/*
+
 function pValue(inputArray,coefic){
   pVal=normal(coefic/(stdev(inputArray)/Math.sqrt(inputArray.length)));
   if(pVal>0.0000001){
@@ -110,7 +110,9 @@ function pValue(inputArray,coefic){
   //console.log(coefic);
   //console.log(inputArray);
 }
+
 function stdev(inputarray){
+   if(inputarray.length==0){return 0;}
    var i,j,total = 0, mean = 0, diffSqredArr = [];
    for(i=0;i<inputarray.length;i+=1){
        total+=inputarray[i];
@@ -131,4 +133,3 @@ function normal(z) {
 		p=p*p; p=p*p; p=p*p
 		return 1/(p*p)
 }
-*/
